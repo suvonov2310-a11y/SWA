@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSH - Suvonov Sherzod | Kinolar Olami</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+            <div class="ssh-logo">SSH</div>
+            <span class="brand-name">Suvonov Sherzod</span>
+        </div>
+        
+        <div class="header-right">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Kino qidirish..." onkeyup="searchMovie()">
+                <i class="fas fa-search"></i>
+            </div>
+            <nav class="nav-links">
+                <a href="https://t.me/Hindkinolar_Bizda" target="_blank" class="tg-btn">
+                    <i class="fab fa-telegram"></i> Bizning kanal
+                </a>
+                <button onclick="filterKino('all')">HAMMASI</button>
+                <button onclick="filterKino('marvel')">MARVEL</button>
+                <button onclick="filterKino('dc')">DC</button>
+                <button onclick="filterKino('netflix')">NETFLIX</button>
+                <button onclick="filterKino('uzmovi')">UZMOVI</button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>O'rgimchak-odam: Uyga yo'l yo'q</h1>
+            <p>Multikoinot eshiklari ochildi. SSH platformasida eksklyuziv tomosha qiling.</p>
+            <button class="play-main-btn"><i class="fas fa-play"></i> Hoziroq ko'rish</button>
+        </div>
+    </div>
+
+    <main>
+        <h2 id="sectionTitle">Trenddagi Kinolar</h2>
+        <div class="movie-grid" id="movieGrid">
+            </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

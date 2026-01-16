@@ -95,3 +95,57 @@ header {
 .movie-info { padding: 10px; text-align: center; }
 
 #sectionTitle { padding-left: 5%; margin-top: 30px; }
+/* --- MOBIL QURILMALAR UCHUN MOSLASHUV (RESPONSIVE) --- */
+
+@media (max-width: 1024px) {
+    /* Planshetlar uchun: har qatorda 3 tadan kino */
+    .movie-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+    .hero-content h1 { font-size: 2.5rem; }
+}
+
+@media (max-width: 768px) {
+    /* Telefonlar uchun: har qatorda 2 tadan kino */
+    .movie-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 15px;
+    }
+
+    header {
+        flex-direction: column; /* Logotip tepada, menyu pastda */
+        padding: 10px;
+        height: auto;
+    }
+
+    .header-right {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        overflow-x: auto; /* Kategoriyalar sig'masa, yon tomonga suriladi */
+        width: 100%;
+        padding-bottom: 5px;
+    }
+
+    .nav-links button {
+        white-space: nowrap; /* Yozuvlar pastga tushib ketmaydi */
+        font-size: 12px;
+    }
+
+    .hero-content h1 { font-size: 1.8rem; }
+    .hero-content p { font-size: 0.9rem; }
+}
+
+@media (max-width: 480px) {
+    /* Juda kichik telefonlar uchun */
+    .ssh-logo { font-size: 20px; padding: 5px 12px; }
+    .brand-name { font-size: 14px; }
+    
+    .movie-card img { height: 220px; } /* Posterlar balandligini moslash */
+}
